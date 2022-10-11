@@ -1,0 +1,31 @@
+{
+  "name": "com.example.aebank",
+  "version": "0.0.1",
+  "displayName": "aebank",
+  "cordova": {
+    "platforms": [
+      "browser",
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-geolocation": {}
+    }
+  },
+  "dependencies": {
+    "cordova-android": "^10.1.1",
+    "cordova-browser": "^6.0.0",
+    "cordova-plugin-geolocation": "^4.0.1",
+    "cordova-plugin-whitelist": "1",
+    "karma": "^6.3.17",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-cli": "^2.0.0",
+    "karma-jasmine": "^4.0.2",
+    "protractor": "^7.0.0"
+  },
+  "devDependencies": {
+    "karma-coverage": "^2.2.0",
+    "karma-mocha": "^2.0.1",
+    "karma-phantomjs-launcher": "^1.0.4"
+  }
+}

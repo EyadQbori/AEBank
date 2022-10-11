@@ -1,0 +1,54 @@
+ <!-- BEGIN MAIN CONTENT -->
+
+<div class="page-content page-content-full"  ng-controller="UserController">
+    <div class="page-login  top-10">
+                 
+        <h3 class="uppercase ultrabold top-30 bottom-0 " style="text-align:center;"> Register  </h3>
+       	 <div class="page-login-field top-15">
+            <i class="fa fa-user"></i>
+            <input type="text" placeholder="name" class="form-control input-circle-right"  ng-model="user.name">
+	     
+        </div>
+        <div class="page-login-field top-15">
+            <i class="fa fa-user"></i>
+			 
+            <input type="text" placeholder=" email" class="form-control input-circle-right"  ng-model="user.email">
+			 
+            
+        </div>
+     <div class="page-login-field top-15">
+                           <i class="fa fa-user"></i>
+                        
+          <input type="text" ng-model="user.mobile"   class="form-control input-circle-right" placeholder="Enter  mobile" required>
+                         
+                        
+                    </div>
+                             
+        <div class="page-login-field bottom-20">
+            <i class="fa fa-lock"></i>
+          <input type="password"  ng-model="user.password"   class="form-control input-circle-right" placeholder="Enter password">
+ 
+           
+        </div>
+         
+        <div class="page-login-links bottom-10">
+           
+            <a class="create float-left" href="#recover"><i class="fa fa-eye"></i>   Forgot Password  </a>
+			 <a class="create float-left" href="#login"><i class="fa fa-eye"></i>   Have account login here</a>
+            <div class="clear"></div>
+        </div>  
+        <button   class="button bg-highlight button-full button-rounded button-s uppercase ultrabold" ng-click="register()"> Register  </button>
+    </div>
+</div>
+<!-- END MAIN CONTENT -->
+
+<script type="text/javascript">
+
+//start program
+$(document).ready(function () {
+
+    // alert(url);
+closeMenu ();
+});
+</script>
+ 

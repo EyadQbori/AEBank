@@ -1,0 +1,62 @@
+
+ 
+<div  class="content" ng-controller="ExpensesController">
+ 
+    <div class="row">			
+        <div class="col-md-12">
+ 
+            <div class="portlet light bordered">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <i class="icon-settings font-green-sharp"></i>
+                        <span class="caption-subject bold uppercase"> Expenses   </span>
+                        <span class="caption-helper hide"></span>
+                    </div>
+                  
+                </div>
+                <div class="portlet-body">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12  ">
+                            <table class="table-bordered">
+                                <tr>
+                                     
+                                
+								    <td colspan="3">
+								   <select data-ng-model="currentSearchBank"   data-ng-options="item.name for item in banks " ng-change="searchBank()" ></select>
+								   </td>
+                                </tr>
+                                <tr>
+                                    <td> Name   </td>
+                                    <td>Amount  </td>
+									<td>Bank  </td>
+                                     
+                                </tr>
+                                <tr ng-repeat="x in expenses  ">     
+                                    <td>{{ x.name}}</td>
+                                    <td>{{ x.amount}}</td>
+									 <td>{{ x.bankname}}</td>
+                                    
+									 
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MAIN CONTENT -->
+
+
+<script type="text/javascript">
+
+//start program
+    $(document).ready(function () {
+
+        // alert(url);
+        closeMenu();
+    });
+</script>
+

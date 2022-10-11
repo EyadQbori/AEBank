@@ -1,0 +1,39 @@
+<!-- BEGIN MAIN CONTENT -->
+
+<div class="page-content page-content-full"  ng-controller="UserController">
+    <div class="page-login  top-10">
+        <img class="preload-image login-bg responsive-image bottom-0"   src="images/back.png" data-src="images/back.png" alt="img">
+                 
+        <h3 class="uppercase ultrabold top-30 bottom-0 " style="text-align:center;"> Login  </h3>
+       
+        <div class="page-login-field top-15">
+            <i class="fa fa-user"></i>
+            <input type="text" placeholder="email" ng-model="user.email">
+            
+        </div>
+     
+        
+        <div class="page-login-field bottom-20">
+            <i class="fa fa-lock"></i>
+            <input type="password" placeholder="password" ng-model="user.password">
+           
+        </div>
+         
+        <div class="page-login-links bottom-10">
+           
+            <a class="create float-left" href="#recover"><i class="fa fa-eye"></i>   Forgot Password  </a>
+			<a class="create float-left" href="#register"><i class="fa fa-eye"></i> Dono't have account register here  </a>
+            <div class="clear"></div>
+        </div>  
+        <button   class="button bg-highlight button-full button-rounded button-s uppercase ultrabold" ng-click="login()"> Login  </button>
+    </div>
+</div>
+<!-- END MAIN CONTENT -->
+
+<script type="text/javascript">
+
+$(document).ready(function () {
+
+closeMenu ();
+});
+</script>

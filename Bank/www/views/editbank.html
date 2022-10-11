@@ -1,0 +1,97 @@
+
+ 
+<div  class="content" ng-controller="BankController">
+ 
+    <div class="row">			
+        <div class="col-md-12">
+ 
+            <div class="portlet light bordered">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <i class="icon-settings font-green-sharp"></i>
+                        <span class="caption-subject bold uppercase"> Bank   </span>
+                        <span class="caption-helper hide"></span>
+                    </div>
+                  
+                </div>
+                <div class="portlet-body">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12  ">
+                            <table class="table-bordered">
+                                <tr>
+                                    <td>      
+                                        <input type="text" ng-model="bank.name"  readonly="true" class="form-control" placeholder=" Name">       
+                                    </td>
+                                     <td>                      
+                                        <input type="text" ng-model="bank.account_number"   class="form-control" placeholder="account_number">
+                                    </td>
+									<td>                      
+                                        <input type="text" ng-model="bank.balance"   class="form-control" placeholder="balance">
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-primary"  ng-disabled="validate() == false" ng-click="editBank()" > Update </button>
+                                    </td>
+                                </tr>
+                                 
+                                
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+							<div class="row">			
+        <div class="col-md-12">
+ 
+            <div class="portlet light bordered">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <i class="icon-settings font-green-sharp"></i>
+                        <span class="caption-subject bold uppercase"> Budget  Details </span>
+                        <span class="caption-helper hide"></span>
+                    </div>
+                  
+                </div>
+                <div class="portlet-body">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12  ">
+                            <table class="table-bordered">
+                                <tr>
+                                    <td>      
+                                        <input type="text" ng-model="budget.name"   class="form-control" placeholder=" Name">       
+                                    </td>
+                                     <td>                      
+                                        <input type="text" ng-model="budget.amount"   class="form-control" placeholder="Amount">
+                                    </td>
+									  <td>
+                                        <button class="btn btn-primary"  ng-disabled="validate() == false" ng-click="addDetail()" > Add </button>
+                                    </td>
+                                     
+                                </tr>
+                                <tr>
+                                    <td> Name   </td>
+                                    <td>Amount  </td>
+									 
+                                    <td>  </td>
+                                </tr>
+                                <tr ng-repeat="x in budgets">     
+                                    <td>{{ x.budgetname}}</td>
+                                    <td>{{ x.amount}}</td>
+									  
+                                    <td><button class="btn btn-danger" ng-click="deleteDetail($index)">Delete </button></td>
+                                </tr>
+                            </table>
+							<button class="btn btn-primary" ng-click="doBack()">Back </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MAIN CONTENT -->
+

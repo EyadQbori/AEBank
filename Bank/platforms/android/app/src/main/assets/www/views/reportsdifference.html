@@ -1,0 +1,36 @@
+ 
+
+<div class="content" ng-controller="ReportsController">
+<div>
+<label>Differences Analsis </label>
+ 		<button class="btn btn-primary" ng-click="goBack()">Back </button>
+</div>
+<div>
+<label>Select Bank</label>
+ <select data-ng-model="currentSearchBank"   data-ng-options="item.name for item in banks " ng-change="searchBank()" ></select>
+		
+</div>
+    
+	
+	 <canvas id="bar" class="chart chart-bar" chart-data="data" chart-labels="labels" chart-legend="true" chart-series="series"  ></canvas> 
+	  
+<!--	  
+<canvas id="pie" class="chart chart-pie"   chart-data="datas" chart-labels="labelss" chart-options="options"></canvas> 
+
+<canvas id="polar-area" class="chart chart-polar-area"   chart-data="datas" chart-labels="labelss" chart-options="options">
+</canvas> 
+-->
+ 
+	</div> 
+
+	
+
+<script type="text/javascript">
+
+//start program
+    $(document).ready(function () {
+
+        // alert(url);
+        closeMenu();
+    });
+</script>
